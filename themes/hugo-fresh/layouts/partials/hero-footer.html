@@ -1,0 +1,18 @@
+{{- $hero        := .Site.Params.hero }}
+{{- $clientLogos := index $hero "clientlogos" }}
+<div class="hero-foot mb-20">
+  <div class="container">
+    <div class="tabs is-centered">
+      <ul>
+        {{- range $clientLogos }}
+        <li>
+          <a>
+            <img class="partner-logo" alt="dog playing" src="{{ printf "/images/dog-breed-heads/%s.svg" . | relURL }}">
+          </a>
+        </li>
+        {{- end }}
+      </ul>
+    </div>
+    <span class="icon-credit">Icons by <a href="https://www.flaticon.com/authors/freepik">Freepik</a> @ <a href="www.flaticon.com">flaticon</a>.</span>
+  </div>
+</div>
