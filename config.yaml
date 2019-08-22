@@ -1,0 +1,152 @@
+baseURL: http://something-fresh.org/
+languageCode: en-us
+title: Jamy's dogs
+theme: hugo-fresh
+
+params:
+  navbarlogo:
+  # Logo (from static/images/logos/___)
+   image: logos/jamy.png
+   link: /
+  font:
+    name: "Open Sans"
+    sizes: [400,600]
+  hero:
+    # Main hero title
+    title: Jamy's honden-uitlaat service
+    # Hero subtitle (optional)
+    subtitle: Enkele en groepswandeling voor honden in de omgeving Lelystad
+    # Button text
+    buttontext: Boek nu uw wandeling!
+    # Where the main hero button links to
+    buttonlink: "#"
+    # Hero image (from static/images/___)
+    image: illustrations/playing-dog-ball.jpg
+    # Footer logos (from static/images/logos/clients/___.svg)
+    clientlogos:
+    - corgi
+    - chinese-crested
+    - french-bulldog
+    - german-sheperd
+    - miniature-schnauzer
+    - yorkshire-terrier
+    - saluki
+    - bernese-mountain-dog
+    - malamute
+    - pomeranian
+    - poodle
+  # Customizable navbar. For a dropdown, add a "sublinks" list.
+  navbar:
+  
+  - title: Over mij
+    url: /
+  - title: Voordelen uitlaatservice
+    url: /
+  - title: Tarieven
+    url: /
+  - title: Boek uw wandeling!
+    url: /
+    button: true
+  section1:
+    title: Tarieven
+    subtitle: with great responsibility
+    subtext1: Strippenkaarten zijn beperkt geldig.
+    subtext2: Wij wandelen tussen 11:30 en 13:00, minstens 60 minuten exclusief reistijd. 
+    subtext3: Individuele wandelingen zijn ook mogelijk. Neem contact op voor de mogelijkheden.
+    tiles:
+    - title: Enkele wandeling
+      icon: ticket
+      text: € 12,-
+      url: /
+      buttonText: Nu boeken
+    - title: 5-strippenkaart
+      icon: tickets
+      text: € 55,-
+      url: /
+      buttonText: Nu boeken
+    - title: 10-strippenkaart
+      icon: punchcard
+      text: € 100,-
+      url: /
+      buttonText: Nu boeken
+  section2:
+    title: Over mij
+    subtitle: (en mijn honden)
+    features:
+    - title: Wie ben ik?
+      text: Mijn naam is Jamy. Ik studeer HBO Pedagogiek in Zwolle. Deze studie heb ik bijna afgerond. Ik heb mijn hele leven huisdieren gehad, dieren om me heen gehad en verzorgd, waaronder ook honden. Momenteel pas ik regelmatig op huisdieren van vrienden en kennissen en heb ik een kat, Kaya en een hond, een Västgötaspets genaamd Cajsa.
+      # Icon (from /images/illustrations/icons/___.svg)
+      # icon: laptop-globe
+    - title: Mijn liefde voor honden
+      text: Ik ben zeer geïnteresseerd in dieren en dan vooral honden. Als vanaf jongs af aan las het ene na het andere boek over hondenverzorging en –rassen en paste ik op honden van vrienden. Zodra de mogelijkheid er was, heb ik mijn eerste eigen hond gekocht. Ik begon honden en hun gedrag zo leuk te vinden dat ik graag met honden wilde werken. Hierdoor is het idee ontstaan om zelf een uitlaatservice te beginnen. In oktober 2019 heb ik hiervoor de opleiding Gediplomeerd uitlaatservice gevolgd bij Martin Gaus.
+      # icon: doc-sync
+  section3:
+    title: One platform
+    subtitle: To rule them all
+    image: illustrations/mockups/app-mockup.png
+    buttonText: Get started
+    buttonLink: "#"
+  section4:
+    title: Waarom een uitlaatservice?
+    subtitle: Er zijn veel redenen om een uitlaatservice te gebruiken. De grootste voordelen...
+    clients:
+    - name: 
+      quote: Uw hond rent lekker buiten als u op uw werk, of juist een dagje lekker weg bent.
+      job: 
+      #img: number1
+    - name: 
+      quote: Uw hond heeft veel energie en u bent slecht ter been, of heeft geen tijd om zelf lang met hem te lopen.
+      job: 
+      #img: number2
+    - name: 
+      quote: Uw hond wordt socialer door de omgang met andere honden.
+      job: 
+      #img: number3
+  section5: true
+  footer:
+    # Logo (from /images/logos/___)
+    logo: fresh-white-alt.svg
+    # Social media links (GitHub, Twitter, etc.). All are optional.
+    socialmedia:
+    - link: https://facebook.com/#
+      # Icons are from Font Awesome
+      icon: facebook
+    - link: https://instagram.com/#
+      icon: instagram
+    - link: https://twitter.com/
+      icon: twitter
+    - link: https://twitter.com/
+      icon: phone
+    bulmalogo: true
+    quicklinks:
+      column1:
+        title: "Product"
+        links:
+        - text: Discover features
+          link: /
+        - text: Why choose our product?
+          link: /
+        - text: Compare features
+          link: /
+        - text: Our roadmap
+          link: /
+        - text: AGB
+          link: /agb
+      column2:
+        title: "Docs"
+        links:
+        - text: Get started
+          link: /
+        - text: User guides
+          link: /
+        - text: Admin guide
+          link: /
+        - text: Developers
+          link: /
+      column3:
+        title: "Blog"
+        links:
+        - text: Latest news
+          link: /blog/first
+        - text: Tech articles
+          link: /blog/second
