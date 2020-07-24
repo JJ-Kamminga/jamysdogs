@@ -18,7 +18,7 @@ input.input {
         padding-bottom: 7px;
     }
     &:focus, &:active {
-        border-color: $light-grey;
+        border-color: darkgreen;
     }
     &.rounded {
         border-radius: 100px;
@@ -62,7 +62,11 @@ label .optional {
     margin-left: 5px;
 }
 
-form p {
+form p, .formerror {
     margin-top: 5px;
     margin-bottom: 5px;    
+}
+
+.formerror {
+    color: red;
 }

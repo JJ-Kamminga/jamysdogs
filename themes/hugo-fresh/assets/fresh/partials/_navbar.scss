@@ -39,6 +39,14 @@ Navbar
     //Navbar items
     .navbar-item {
         color: $muted-grey;
+        &.is-primary {
+            color: black;
+            border: 2px solid $muted-grey;
+            border-radius: 50px;
+            &:hover {
+                color: $secondary !important;
+            }
+        }
         &.is-secondary {
             &:hover {
                 color: $secondary !important;

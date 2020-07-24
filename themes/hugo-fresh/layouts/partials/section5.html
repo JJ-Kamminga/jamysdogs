@@ -1,4 +1,4 @@
-<section class="section section-light-grey is-medium">
+<section id="contact" class="section section-light-grey is-medium">
   <div class="container">
     <div class="title-wrapper has-text-centered">
       <h2 class="title is-2 is-spaced">Contact </h2>
@@ -9,14 +9,28 @@
     <div class="content-wrapper">
       <div class="columns">
         <div class="column is-6 is-offset-3">
-          <form name="contactformulier">
+            <div id="errorlist" style="font-weight: bold; color: red;"></div><!--For testing-->
+          <form name="contactformulier" onsubmit="return validateForm()">
             <div class="columns is-multiline">
-              <div class="column is-6">
+              <div  class="column is-12">
+                <label for="bestelling">Direct boeken?<span class="optional">Optioneel</span></label>
+                
+                <select id="directboeken" class="input is-medium" name="bestelling">
+                  <option value="" selected>Nog geen keuze</option>
+                  <option id="enkelewandeling" value="enkelewandeling">Enkele wandeling</option>
+                  <option id="5strippenkaart" value="5strippenkaart">5-Strippenkaart</option>
+                  <option id="10strippenkaart" value="10strippenkaart">10-Strippenkaart</option>
+                </select>
+                <p>Maak een keuze en ik neem zo snel mogelijk contact met u op.</p>
+              </div>
+              <div class="column is-12">
                 <label for="name">Naam</label>
+                <div class="formerror" id="nameError"></div>
                 <input class="input is-medium" name="naam" label="Naam" type="text" placeholder="Jan Janssen">
               </div>
-              <div class="column is-6">
+              <div class="column is-12">
                 <label for="email">E-mailadres</label>
+                <div class="formerror" id="emailError"></div>
                 <input class="input is-medium" name="email"  label="E-mailadres" type="email" placeholder="voorbeeld@voorbeeld.com">
               </div>
               <div class="column is-12">
@@ -27,17 +41,7 @@
                 <label for="bericht">Uw vraag</label>
                 <textarea class="textarea"  name="bericht" label="Bericht"  rows="10" placeholder="Uw vraag"></textarea>
               </div>
-              <div  class="column is-12">
-              <label for="bestelling">Direct boeken?<span class="optional">Optioneel</span></label>
               
-              <select class="input is-medium" name="bestelling">
-                <option value="geen" disabled>Maak een keuze</option>
-                <option value="enkelewandeling">Enkele wandeling</option>
-                <option value="5strippenkaart">5-Strippenkaart</option>
-                <option value="10strippenkaart">10-Strippenkaart</option>
-              </select>
-              <p>Maak een keuze en ik neem zo snel mogelijk contact met u op.</p>
-            </div>
               <div class="form-footer has-text-centered mt-10">
                 <button class="button cta is-large primary-btn raised is-clear">Versturen</button>
               </div>

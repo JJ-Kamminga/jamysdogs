@@ -1,5 +1,94 @@
-$(document).ready(function(){
+//Form validation
+function isValidLetter(ch) {
+      ch = ch.toLowerCase();
+      if (ch >= 'a' && ch <= 'z')
+        return true;
+      if (ch == '-' || ch == ' ')
+        return true;
+      return false;
+    }
+
+function isValidName(name) {
+      for (var i = 0; i < name.length; i++) {
+        var c = name.charAt(i);
+        if (!isValidLetter(c)) {
+          return false;
+        }
+      }
+      return true;
+    }    
+
+function isValidEmail(eml) {
+    var emailRegExp = new RegExp("^([a-z0-9,!#\$%&'\*\+/=\?\^_`\{\|}~-]+(\.[a-z0-9,!#\$%&'\*\+/=\?\^_`\{\|}~-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*\.([a-z]{2,})){1}(;[a-z0-9,!#\$%&'\*\+/=\?\^_`\{\|}~-]+(\.[a-z0-9,!#\$%&'\*\+/=\?\^_`\{\|}~-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*\.([a-z]{2,}))*$");
+    return emailRegExp.test(eml);
+    }
+
+function validateForm() {
+    var dataOk = true;
+    var errorStringNaam = "";
+    var errorStringMail = "";
+    var elementInError = null;
+
+    var inputName = contactformulier.naam.value;
+    var inputEmail = contactformulier.email.value;
+    var inputPhone = contactformulier.phone.value;
+
+    if (inputName.length == 0) {
+        errorStringNaam += "U heeft geen naam ingevuld.<br>";
+        dataOk = false;
+        if (elementInError == null)
+        elementInError = contactformulier.naam;
+    }   
+        else if (!isValidName(inputName)) {
+            errorStringNaam += "U heeft geen geldige naam ingevuld.<br>";
+            dataOk = false;
+            if (elementInError == null)
+                elementInError = contactformulier.naam;
+        }
+
+    if (inputEmail.length == 0) {
+        errorStringMail += "U heeft geen mailadres ingevuld.<br>";
+        dataOk = false;
+        if (elementInError == null)
+        elementInError = contactformulier.email;
+    }
+        else if (!isValidEmail(inputEmail)) {
+            errorStringMail += "U heeft geen geldig mailadres ingevuld.<br>";
+            dataOk = false;
+            if (elementInError == null)
+            elementInError = contactformulier.email;
+        }
     
+    //Create error messages
+
+    if (!dataOk) {
+        document.getElementById("nameError").innerHTML = errorStringNaam;
+            elementInError.focus();
+        document.getElementById("emailError").innerHTML = errorStringMail;
+            elementInError.focus();
+        }
+    return dataOk;
+}
+
+// Place order in form
+
+function placeOrder(selection) {
+    console.log(selection);
+    if (selection == "Enkele wandeling") {
+        document.getElementById('directboeken').value = "enkelewandeling";
+
+    }
+    else if (selection == "5-Strippenkaart") {
+        document.getElementById('directboeken').value = "5strippenkaart";
+    }
+    else if (selection == "10-Strippenkaart") {
+        document.getElementById('directboeken').value = "10strippenkaart";
+        document.getElementById('directboeken').focus();
+    }
+}
+
+$(document).ready(function(){
+
     //Preloader
     $(window).on('load', function() { // makes sure the whole site is loaded 
         $('#status').fadeOut(); // will first fade out the loading animation 

@@ -5,12 +5,12 @@
 {{- $subtext1    := index $section1 "subtext1" }}
 {{- $subtext2    := index $section1 "subtext2" }}
 {{- $subtext3    := index $section1 "subtext3" }}
-<section class="section section-feature-grey is-medium">
+<section id="tarieven" class="section section-feature-grey is-medium">
   <div class="container">
     <div class="title-wrapper has-text-centered">
       <h2 class="title is-2">{{ $title }}</h2>
-      
       <div class="divider is-centered"></div>
+      <p class="subtext">{{ $subtitle }}</p>
     </div>
 
     <div class="content-wrapper">
@@ -28,7 +28,7 @@
                 <p>{{ .text }}</p>
             </div>
             <div class="card-action">
-              <a href="{{ .url }}" class="button btn-align-md accent-btn raised">{{ .buttonText }}</a>
+              <a href="{{ .url }}" id="{{ .title }}" class="button btn-align-md accent-btn raised" onclick="placeOrder(this.id)">{{ .buttonText }}</a>
             </div>
           </div>
           
@@ -39,7 +39,6 @@
           <div class="divider is-centered"></div>
           <p class="subtext">{{ $subtext1 }}</p>
           <p class="subtext">{{ $subtext2 }}</p>
-          <p class="subtext">{{ $subtext3 }}</p>
     </div>
     </div>
   </div>
