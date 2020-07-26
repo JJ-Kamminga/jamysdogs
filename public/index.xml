@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Jamy&#39;s dogs</title>
+    <title>Jamy&#39;s uitlaatservice</title>
     <link>https://elegant-euler-e4d67d.netlify.com/</link>
-    <description>Recent content on Jamy&#39;s dogs</description>
+    <description>Recent content on Jamy&#39;s uitlaatservice</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>nl</language>
+    <lastBuildDate>Sun, 26 Jul 2020 12:28:48 +0200</lastBuildDate>
     
 	<atom:link href="https://elegant-euler-e4d67d.netlify.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>404</title>
+      <link>https://elegant-euler-e4d67d.netlify.com/404/</link>
+      <pubDate>Sun, 26 Jul 2020 12:28:48 +0200</pubDate>
+      
+      <guid>https://elegant-euler-e4d67d.netlify.com/404/</guid>
+      <description>&amp;ldquo;Test 404 Motherfucker&amp;rdquo;</description>
+    </item>
     
   </channel>
 </rss>

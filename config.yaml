@@ -3,6 +3,10 @@ languageCode: nl
 title: Jamy's uitlaatservice
 theme: hugo-fresh
 
+disableKinds:
+- taxonomy
+- term
+
 params:
   navbarlogo:
   # image (from static/images/logos/___) needs to be enabled from navbar partial
@@ -56,7 +60,7 @@ params:
     tiles:
     - title: Enkele wandeling
       icon: ticket
-      text: € 12,-
+      text: € 12,50
       url: /#contact
       buttonText: Nu boeken
     - title: 5-Strippenkaart
@@ -108,14 +112,14 @@ params:
     logo: fresh-white-alt.svg #needs to be enabled in footer partial
     # Social media links (GitHub, Twitter, etc.). All are optional.
     socialmedia:
-    - link: https://facebook.com/#
+    #- link: https://facebook.com/#
       # Icons are from Font Awesome
-      icon: facebook
+      #icon: facebook
     - link: https://instagram.com/#
       icon: instagram
-    - link: https://twitter.com/
-      icon: twitter
-    - link: https://twitter.com/
+    #- link: https://twitter.com/
+      #icon: twitter
+    - link: /#telephone
       icon: phone
     quicklinks:
       column1:
@@ -132,5 +136,5 @@ params:
       column2:
         title: "Site"
         links:
-        - text: Privacy
+        - text: Privacy statement
           link: /#privacy
