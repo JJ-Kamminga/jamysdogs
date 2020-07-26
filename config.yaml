@@ -8,6 +8,8 @@ disableKinds:
 - term
 
 params:
+  description: Enkele en groepswandelingen voor honden in de omgeving Lelystad
+  language: Dutch
   navbarlogo:
   # image (from static/images/logos/___) needs to be enabled from navbar partial
    image: logos/jamy.png
