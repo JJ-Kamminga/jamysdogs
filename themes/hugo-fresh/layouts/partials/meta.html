@@ -22,6 +22,12 @@
 <meta name="url" content="{{ .Permalink }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
 
+<!-- Images -->
+<meta itemprop="image" content="{{ .Site.Params.hero.image }}" />
+<meta property="og:image" content="{{ .Site.Params.hero.image }}" /> 
+<meta name="twitter:image" content="{{ .Site.Params.hero.image }}" />
+<meta name="twitter:image:src" content="{{ .Site.Params.hero.image }}" /> 
+
 <!-- Language -->
 <meta property="og:locale" content="{{ .Site.LanguageCode }}">
 <meta name="language" content="{{ .Site.Params.language }}">
