@@ -117,8 +117,8 @@ params:
     #- link: https://facebook.com/#
       # Icons are from Font Awesome
       #icon: facebook
-    - link: https://instagram.com/#
-      icon: instagram
+    #- link: https://instagram.com/#
+    #  icon: instagram
     #- link: https://twitter.com/
       #icon: twitter
     - link: /#telephone

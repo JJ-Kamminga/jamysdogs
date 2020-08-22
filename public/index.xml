@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jamy&#39;s uitlaatservice</title>
-    <link>https://elegant-euler-e4d67d.netlify.com/</link>
+    <link>https://elegant-euler-e4d67d.netlify.app/</link>
     <description>Recent content on Jamy&#39;s uitlaatservice</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>nl</language>
     
-	<atom:link href="https://elegant-euler-e4d67d.netlify.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://elegant-euler-e4d67d.netlify.app/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
