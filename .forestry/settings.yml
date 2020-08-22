@@ -5,9 +5,12 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
+  path: themes/hugo-fresh/layouts/partials/footer.html
+  label: Footer
+  match: "**/*"
+- type: document
   path: config.yaml
   label: Configuratie
-  match: "**/*"
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
