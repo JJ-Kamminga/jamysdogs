@@ -58,7 +58,6 @@ params:
     title: Tarieven
     subtitle: Tijdelijk doe ik alleen individuele wandelingen.
     subtext1: Strippenkaarten zijn beperkt geldig.
-    subtext2: Wij wandelen tussen 11:30 en 13:00, minstens 60 minuten exclusief reistijd. 
     tiles:
     - title: Enkele wandeling
       icon: ticket
