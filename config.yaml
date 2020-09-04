@@ -20,7 +20,7 @@ params:
     sizes: [400,600]
   hero:
     # Main hero title
-    title: Jamy's uitlaatservice
+    # title: Jamy's uitlaatservice
     # Hero subtitle (optional)
     subtitle: Enkele en groepswandelingen voor honden in de omgeving Lelystad
     # Button text
@@ -114,9 +114,9 @@ params:
     logo: fresh-white-alt.svg #needs to be enabled in footer partial
     # Social media links (GitHub, Twitter, etc.). All are optional.
     socialmedia:
-    #- link: https://facebook.com/#
-      # Icons are from Font Awesome
-      #icon: facebook
+    # Icons are from Font Awesome
+    - link: https://www.facebook.com/pages/category/Local-Service/Jamys-Honden-Uitlaatservice-107712781052058/
+      icon: facebook
     #- link: https://instagram.com/#
     #  icon: instagram
     #- link: https://twitter.com/
