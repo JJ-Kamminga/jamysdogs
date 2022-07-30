@@ -61,17 +61,17 @@ params:
     tiles:
     - title: Enkele wandeling
       icon: ticket
-      text: € 12,50
+      text: € 15,-
       url: /#contact
       buttonText: Nu boeken
     - title: 5-Strippenkaart
       icon: tickets
-      text: € 55,-
+      text: € 65,-
       url: /#contact
       buttonText: Nu boeken
     - title: 10-Strippenkaart
       icon: punchcard
-      text: € 100,-
+      text: € 120,-
       url: /#contact
       buttonText: Nu boeken
   section2:
@@ -79,7 +79,7 @@ params:
     subtitle: (en mijn honden)
     features:
     - title: Wie ben ik?
-      text: Mijn naam is Jamy. Ik studeer HBO Pedagogiek in Zwolle. Deze studie heb ik bijna afgerond. Ik heb mijn hele leven huisdieren gehad, dieren om me heen gehad en verzorgd, waaronder ook honden. Momenteel pas ik regelmatig op huisdieren van vrienden en kennissen en heb ik een kat, Kaya en een hond, een Västgötaspets genaamd Cajsa.
+      text: Mijn naam is Jamy. Ik heb de studie pedagogiek afgerond, maar richt me nu volledig op mijn passie, honden! Ik heb mijn hele leven huisdieren gehad, dieren om me heen gehad en verzorgd, waaronder ook honden. Ik paste al regelmatig op huisdieren van vrienden en kennissen, en sinds 2019 heb ik mijn eigen uitlaatservice. Ik heb zelf ook een kat en meerdere honden.
       # Icon (from /images/illustrations/icons/___.svg)
       # icon: laptop-globe
     - title: Mijn liefde voor honden
