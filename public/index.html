@@ -436,7 +436,7 @@
   <div class="container">
     <div class="title-wrapper has-text-centered">
       <h2 class="title is-2 is-spaced">Contact </h2>
-      <h3 class="subtitle is-5 is-muted">Direct boeken? Of heeft u een vraag?<br> Neem contact met mij op via het formulier.</h3>
+      <h3 class="subtitle is-5 is-bold">Ik neem momenteel geen nieuwe klanten aan. Daarom is het contactformulier momenteel gesloten.</h3>
       <div class="divider is-centered"></div>
     </div>
 
@@ -449,7 +449,7 @@
               <div  class="column is-12">
                 <label for="bestelling">Direct boeken?<span class="optional">Optioneel</span></label>
                 
-                <select id="directboeken" class="input is-medium" name="bestelling">
+                <select disabled id="directboeken" class="input is-medium" name="bestelling">
                   <option value="" selected>Nog geen keuze</option>
                   <option id="enkelewandeling" value="enkelewandeling">Enkele wandeling</option>
                   <option id="5strippenkaart" value="5strippenkaart">5-Strippenkaart</option>
@@ -460,24 +460,24 @@
               <div class="column is-12">
                 <label for="name">Naam</label>
                 <div class="formerror" id="nameError"></div>
-                <input class="input is-medium" name="naam" label="Naam" type="text" placeholder="Jan Janssen">
+                <input disabled class="input is-medium" name="naam" label="Naam" type="text" placeholder="Jan Janssen">
               </div>
               <div class="column is-12">
                 <label for="email">E-mailadres</label>
                 <div class="formerror" id="emailError"></div>
-                <input class="input is-medium" name="email"  label="E-mailadres" type="email" placeholder="voorbeeld@voorbeeld.com">
+                <input disabled class="input is-medium" name="email"  label="E-mailadres" type="email" placeholder="voorbeeld@voorbeeld.com">
               </div>
               <div class="column is-12">
                   <label for="email">Telefoonnummer</label>
-                  <input class="input is-medium" name="phone" label="Telefoonnummer" type="tel" placeholder="061234567">
+                  <input disabled class="input is-medium" name="phone" label="Telefoonnummer" type="tel" placeholder="061234567">
               </div>
               <div class="column is-12">
                 <label for="bericht">Uw vraag</label>
-                <textarea class="textarea"  name="bericht" label="Bericht"  rows="10" placeholder="Uw vraag"></textarea>
+                <textarea disabled class="textarea"  name="bericht" label="Bericht"  rows="10" placeholder="Uw vraag"></textarea>
               </div>
               
               <div class="form-footer has-text-centered mt-10">
-                <button class="button cta is-large primary-btn raised is-clear">Versturen</button>
+                <button disabled class="button cta is-large primary-btn raised is-clear">Versturen</button>
               </div>
             </div>
           </form>
